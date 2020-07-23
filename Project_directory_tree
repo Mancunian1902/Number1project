@@ -1,0 +1,34 @@
+├── db.sqlite3
+├── hello_world
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-38.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-38.pyc
+│   │   ├── __init__.cpython-38.pyc
+│   │   ├── models.cpython-38.pyc
+│   │   ├── urls.cpython-38.pyc
+│   │   └── views.cpython-38.pyc
+│   ├── templates
+│   │   ├── about_company.html
+│   │   └── hello_world.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── manage.py
+└── number1project
+    ├── asgi.py
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-38.pyc
+    │   ├── settings.cpython-38.pyc
+    │   ├── urls.cpython-38.pyc
+    │   └── wsgi.cpython-38.pyc
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
