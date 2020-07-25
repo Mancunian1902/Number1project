@@ -21,6 +21,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon/favicon.ico')),
     path('', include('hello_world.urls'))
+
 
 ]
