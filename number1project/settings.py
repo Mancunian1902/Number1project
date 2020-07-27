@@ -25,7 +25,17 @@ SECRET_KEY = 'v#$)6n$x!yftfnos-d$4tq4^sn_($qq^zm10_((tg0g22b*27@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS¶
+# # Default: [] (Empty list)
+# # A list of strings representing the host/domain names that this Django site can serve. This is a security measure to prevent HTTP Host header attacks, which are possible even under many seemingly-safe web server configurations.
+# # Values in this list can be fully qualified names (e.g. 'www.example.com'), in which case they will be matched against the request’s Host header exactly (case-insensitive, not including port). A value beginning with a period can be used as a subdomain wildcard: '.example.com' will match example.com, www.example.com, and any other subdomain of example.com. A value of '*' will match anything; in this case you are responsible to provide your own validation of the Host header (perhaps in a middleware; if so this middleware must be listed first in MIDDLEWARE).
+# # Django also allows the fully qualified domain name (FQDN) of any entries. Some browsers include a trailing dot in the Host header which Django strips when performing host validation.
+# # If the Host header (or X-Forwarded-Host if USE_X_FORWARDED_HOST is enabled) does not match any value in this list, the django.http.HttpRequest.get_host() method will raise SuspiciousOperation.
+# # When DEBUG is True and ALLOWED_HOSTS is empty, the host is validated against ['localhost', '127.0.0.1', '[::1]'].
+# # ALLOWED_HOSTS is also checked when running tests.
+# # This validation only applies via get_host(); if your code accesses the Host header directly from request.META you are bypassing this security protection.
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,6 +66,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR,'templates')],
+        #TRYING OUT LINE BELOW
+        #'DIRS': ["number1project/templates"]
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

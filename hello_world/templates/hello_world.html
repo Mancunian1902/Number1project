@@ -1,20 +1,25 @@
+{% extends "base.html" %}
+
+
 <header>
-<h1 text-align;center>Welcome to our home page</h1>
+{% block page_content %}
+    <h1 text-align;center>Welcome to our home page</h1>
+
+
 
     <p> <em>We are gladly greeting you at our web page, where you can find the most recent and accurate information
     about our company. Also you can meet our team at Our Team tab and write us an email with all the questions
        arrise in your mind.<em>
     </p>
-
-    <button> Home button </button>
-    <button> About the company button </button>
+  <button> About the company button </button>
     <header>
 
-        <a href="about_company.html"> Go to about the company </a>
-        <a href="news.html"> Fresh news </a>
-        <a href="our_team.html"> Meet our team </a>
-        <a href="contact_us.html"> Contact us  </a>
 
+        <a href="/about/"> Go to about the company </a>
+        <a href="/news"> Fresh news </a>
+        <a href="/our_team/"> Meet our team </a>
+        <a href="/contact_us/"> Contact us  </a>
+{% endblock %}
 <footer>
     <a href="mailto:simply@company.com?subject=Reaching%20Out&body=How%20are%20you">Email us</a>
         <footer>
