@@ -1,8 +1,59 @@
-{% extends "base.html" %}
+<head>
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
 
+<body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid" style="background-color: yellow">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Project Smart</a>
+                </div>
 
+                <!-- Code below is not quite adaptable for mobile -->
+                <a class="p-2 text-muted" href="/hello_world/">Home page</a>
+                <a class="p-2 text-muted" href="/news/">News</a>
+                <a class="p-2 text-muted" href="/about_company/">About company</a>
+                <a class="p-2 text-muted" href="/our_team/">Our team</a>
+                <a class="p-2 text-muted" href="/contact_us/">Contact us</a>
+
+                <!--<div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> <a href="#"> Home page </a> </li>
+                        <li> <a href="#"> News </a> </li>
+                        <li> <a href="#"> About company </a> </li>
+                        <li> <a href="#"> Meet our team </a> </li>
+                        <li> <a href="#"> Contact us </a> </li>
+                    </ul>
+                </div> -->
+            </div>
+
+        </nav>
+
+        <div class="container-fluid" style="background-color: pink">
+            <h1 text-align;center> Welcome to our home page</h1>
+            <p> <em>We are gladly greeting you at our web page, where you can find the most recent and accurate information
+            about our company. Also you can meet our team at Our Team tab and write us an email with all the questions
+            arrise in your mind.<em></p>
+        </div>
+        <div class="row">
+            <div class="col-md-4" style="background-color: red"> First block</div>
+            <div class="col-md-4" style="background-color: blue"> Second bloc</div>
+            <div class="col-md-4" style="background-color: gray"> Third block</div>
+        </div>
+
+        <br>
+
+        <footer>
+        <a href="mailto:simply@company.com?subject=Reaching%20Out&body=How%20are%20you">Email us</a>
+        <footer>
+
+  </body>
+
+<!--
 <header>
-{% block page_content %}
+
     <h1 text-align;center>Welcome to our home page</h1>
 
 
@@ -19,7 +70,7 @@
         <a href="/news"> Fresh news </a>
         <a href="/our_team/"> Meet our team </a>
         <a href="/contact_us/"> Contact us  </a>
-{% endblock %}
+
 <footer>
     <a href="mailto:simply@company.com?subject=Reaching%20Out&body=How%20are%20you">Email us</a>
-        <footer>
+        <footer> -->
